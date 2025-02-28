@@ -33,8 +33,8 @@ def fetch_tweets(user_name, max_results, pagination_token, exclude_replies, excl
     :return: 推文列表和分页令牌
     """
     try:
-        # user_id = get_user_id(user_name)
-        user_id = 1520843497464791040
+        user_id = get_user_id(user_name)
+
         click.echo(max_results)
         # 调用 fetch_tweets 功能
         tweets, next_token = ft(
